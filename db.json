@@ -1,0 +1,157 @@
+{
+	"houses": [
+		{
+			"id": 1,
+			"type": "Дом",
+			"rooms": 5,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 10000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Чуйская область",
+			"installment": true,
+			"exchange": true
+		},
+		{
+			"id": 2,
+			"type": "Квартира",
+			"rooms": 3,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 20000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Иссык-кульская область",
+			"installment": false,
+			"exchange": false
+		},
+		{
+			"id": 3,
+			"type": "Квартира",
+			"rooms": 1,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 30000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Таласская область",
+			"installment": true,
+			"exchange": false
+		},
+		{
+			"id": 4,
+			"type": "Дом",
+			"rooms": 2,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 40000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Джалал-абадская область",
+			"installment": true,
+			"exchange": true
+		},
+		{
+			"id": 5,
+			"type": "Дом",
+			"rooms": 4,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 50000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Ошская область",
+			"installment": false,
+			"exchange": true
+		},
+		{
+			"id": 6,
+			"type": "Дом",
+			"rooms": 4,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 60000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Нарынская область",
+			"installment": false,
+			"exchange": false
+		},
+		{
+			"id": 7,
+			"type": "Дом",
+			"rooms": 3,
+			"area": 82,
+			"landArea": 100,
+			"condition": "",
+			"severage": "Центральная",
+			"electricity": "",
+			"ceilHeight": "",
+			"description": "",
+			"price": 70000,
+			"phone": "",
+			"image": [
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+			],
+			"location": "Баткенская область",
+			"installment": false,
+			"exchange": false
+		}
+	]
+}

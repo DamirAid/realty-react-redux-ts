@@ -1,0 +1,15 @@
+.main__carousel-sec .swiper-slide{
+	height: 70vh;
+	background-size: cover;
+	background-position: center;
+}
+.main__carousel-sec .text_wrap{
+	position: absolute;
+	z-index: 999;
+	left: 50px;
+	top: 100px;
+	color:#fff;
+}
+.main__carousel-sec .text_wrap h3 span{
+	color: #00dd9f;
+}
