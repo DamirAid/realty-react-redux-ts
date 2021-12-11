@@ -4,9 +4,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
 import './HeaderSearchBlock.css'
-import { Link } from 'react-router-dom';
+
 
 import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { NavLink } from 'react-router-dom';
+import history from '../../helpers/history';
 const HeaderSearchBlock: React.FC = () => {
 	const searchRealty = useTypedSelector(state => state.realty.searchRealty)
 	return (
@@ -17,9 +19,9 @@ const HeaderSearchBlock: React.FC = () => {
 
 						<ListItemButton>
 
-							<Link to={`/details/${item.id}`} style={{ width: '100%', color: 'inherit' }} >
+							<NavLink  to={`/details/${item.id}`} style={{ width: '100%', color: 'inherit' }} >
 								<ListItemText primary={`${item.rooms}-комн. ${item.type}, ${item.price}$`} />
-							</Link>
+							</NavLink>
 
 						</ListItemButton>
 

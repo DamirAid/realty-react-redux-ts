@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, useContext } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -18,10 +18,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import './Header.css'
 import { Link } from 'react-router-dom'
 import HeaderSearchBlock from '../HeaderSearchBlock/HeaderSearchBlock';
-import { useDispatch, useSelector } from 'react-redux';
-import { getSearchRealty } from '../../redux/actions';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useActions } from '../../hooks/useActions';
+import { NavLink } from 'react-router-dom';
+import { Context } from '../..';
+import { useAuthState } from 'react-firebase-hooks/auth';
 const Search = styled('div')(({ theme }) => ({
 	position: 'relative',
 	borderRadius: theme.shape.borderRadius,
@@ -100,6 +101,8 @@ export default function PrimarySearchAppBar() {
 	};
 
 	const menuId = 'primary-search-account-menu';
+	const { auth }: any = useContext(Context)
+	const [user] = useAuthState(auth)
 	const renderMenu = (
 		<Menu
 			anchorEl={anchorEl}
@@ -116,8 +119,19 @@ export default function PrimarySearchAppBar() {
 			open={isMenuOpen}
 			onClose={handleMenuClose}
 		>
-			<MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-			<MenuItem onClick={handleMenuClose}>My account</MenuItem>
+			{
+				user ?
+					<MenuItem onClick={() => {
+						auth.signOut()
+						handleMenuClose()
+					}}>Выйти</MenuItem>
+					:
+					<NavLink to='/login'>
+						<MenuItem onClick={handleMenuClose}>Логин</MenuItem>
+					</NavLink>
+			}
+
+
 		</Menu>
 	);
 
@@ -209,7 +223,7 @@ export default function PrimarySearchAppBar() {
 
 
 							/>
-							<HeaderSearchBlock  />
+							<HeaderSearchBlock />
 						</Search>
 
 

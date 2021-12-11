@@ -1,157 +1,486 @@
 {
-	"houses": [
-		{
-			"id": 1,
-			"type": "Дом",
-			"rooms": 5,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 10000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Чуйская область",
-			"installment": true,
-			"exchange": true
-		},
-		{
-			"id": 2,
-			"type": "Квартира",
-			"rooms": 3,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 20000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Иссык-кульская область",
-			"installment": false,
-			"exchange": false
-		},
-		{
-			"id": 3,
-			"type": "Квартира",
-			"rooms": 1,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 30000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Таласская область",
-			"installment": true,
-			"exchange": false
-		},
-		{
-			"id": 4,
-			"type": "Дом",
-			"rooms": 2,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 40000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Джалал-абадская область",
-			"installment": true,
-			"exchange": true
-		},
-		{
-			"id": 5,
-			"type": "Дом",
-			"rooms": 4,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 50000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Ошская область",
-			"installment": false,
-			"exchange": true
-		},
-		{
-			"id": 6,
-			"type": "Дом",
-			"rooms": 4,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 60000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Нарынская область",
-			"installment": false,
-			"exchange": false
-		},
-		{
-			"id": 7,
-			"type": "Дом",
-			"rooms": 3,
-			"area": 82,
-			"landArea": 100,
-			"condition": "",
-			"severage": "Центральная",
-			"electricity": "",
-			"ceilHeight": "",
-			"description": "",
-			"price": 70000,
-			"phone": "",
-			"image": [
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
-				"https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
-			],
-			"location": "Баткенская область",
-			"installment": false,
-			"exchange": false
-		}
-	]
+  "houses": [
+    {
+      "id": 1,
+      "type": "Дом",
+      "rooms": 5,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 10000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Чуйская область",
+      "installment": true,
+      "exchange": true
+    },
+    {
+      "id": 2,
+      "type": "Квартира",
+      "rooms": 3,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 20000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Иссык-кульская область",
+      "installment": false,
+      "exchange": false
+    },
+    {
+      "id": 3,
+      "type": "Квартира",
+      "rooms": 1,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 30000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Таласская область",
+      "installment": true,
+      "exchange": false
+    },
+    {
+      "id": 4,
+      "type": "Дом",
+      "rooms": 2,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 40000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Джалал-абадская область",
+      "installment": true,
+      "exchange": true
+    },
+    {
+      "id": 5,
+      "type": "Дом",
+      "rooms": 4,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 50000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Ошская область",
+      "installment": false,
+      "exchange": true
+    },
+    {
+      "id": 6,
+      "type": "Дом",
+      "rooms": 4,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 60000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Нарынская область",
+      "installment": false,
+      "exchange": false
+    },
+    {
+      "id": 7,
+      "type": "Дом",
+      "rooms": 3,
+      "area": 82,
+      "landArea": 100,
+      "condition": "",
+      "severage": "Центральная",
+      "electricity": "",
+      "ceilHeight": "",
+      "description": "",
+      "price": 70000,
+      "phone": "",
+      "image": [
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg",
+        "https://dobrovdome.ru/assets/uploads/projects/as-2289/as-2289.jpg"
+      ],
+      "location": "Баткенская область",
+      "installment": false,
+      "exchange": false
+    },
+    {
+      "type": "Квартира",
+      "rooms": 5000,
+      "area": 45,
+      "price": 6,
+      "id": 8
+    },
+    {
+      "type": "Квартира",
+      "rooms": 5000,
+      "area": 45,
+      "price": 6,
+      "id": 9
+    },
+    {
+      "type": "Квартира",
+      "rooms": 5000,
+      "area": 45,
+      "price": 6,
+      "id": 10
+    },
+    {
+      "type": "Дом",
+      "rooms": 321,
+      "area": 321,
+      "price": null,
+      "id": 11
+    },
+    {
+      "type": "Квартира",
+      "rooms": null,
+      "area": 21321,
+      "price": 3213,
+      "id": 12
+    },
+    {
+      "type": "Дом",
+      "rooms": "Свободная планировка",
+      "area": 21321,
+      "price": 3213,
+      "id": 13
+    },
+    {
+      "type": "",
+      "rooms": 0,
+      "area": 0,
+      "price": 0,
+      "image": [
+        "321321",
+        "321312",
+        "31232131"
+      ],
+      "id": 14
+    }
+  ],
+  "comments": [
+    {
+      "productId": 1,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "321312",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 1
+    },
+    {
+      "productId": 1,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "321312",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 2
+    },
+    {
+      "productId": 2,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "321321",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 3
+    },
+    {
+      "productId": 1,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 4
+    },
+    {
+      "productId": 1,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 5
+    },
+    {
+      "productId": 3,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "dsadsa",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 6
+    },
+    {
+      "productId": 3,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "sadsa",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 7
+    },
+    {
+      "productId": 3,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "dsa",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 8
+    },
+    {
+      "productId": 3,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "czxxz",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 9
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "dsadas",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 10
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "dsadsa",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 11
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "dxzcxz",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 12
+    },
+    {
+      "productId": 4,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "cxzczx",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 13
+    },
+    {
+      "productId": 4,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "cxzcxz",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 14
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "cxzczx",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 15
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "cxzcxz ",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 16
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "dsadsa",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 17
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 18
+    },
+    {
+      "productId": 1,
+      "uid": "HGSbBylvfqeiBigXbtXoY9q7fb92",
+      "displayName": "Нафта ОЙЛ U.G.",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GgjAoese_oHBDbm_Xk50qA6ELUHZxiEAY3wb2KP=s96-c",
+      "text": "",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 19
+    },
+    {
+      "productId": 3,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "32131",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 20
+    },
+    {
+      "productId": 4,
+      "uid": "RFBQPJBCjLZv0fg4Qf5Q3lP76yx1",
+      "displayName": "Дамир Хаваза",
+      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJx1NEHEc7iwzjgIOK0ofnnyUDu_a-sKqUkBlXPD=s96-c",
+      "text": "sdad",
+      "createdAt": {
+        "_delegate": {
+          "_methodName": "FieldValue.serverTimestamp"
+        }
+      },
+      "id": 21
+    }
+  ]
 }

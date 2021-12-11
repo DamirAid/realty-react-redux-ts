@@ -16,6 +16,7 @@ const INIT_STATE: RealtyState = {
 	details: {},
 	favorite: {},
 	searchRealty: [],
+	addedRealty: {}
 
 
 }
@@ -38,6 +39,8 @@ export const realtyReducer = (state = INIT_STATE, action: RealtyAction): RealtyS
 			return { ...state, favorite: action.payload }
 		case RealtyActionTypes.GET_SEARCH_REALTY:
 			return { ...state, searchRealty: action.payload }
+			case RealtyActionTypes.ADD_REALTY:
+				return { ...state, addedRealty: action.payload }			
 		default: return state
 	}
 }

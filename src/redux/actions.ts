@@ -1,7 +1,9 @@
+import { CommentsActionTypes, IComment } from './../types/comments';
 import { IDetails } from './../types/realty';
 import axios from "axios"
 import { Dispatch } from "react"
-import {RealtyAction, RealtyActionTypes } from "../types/realty"
+import { RealtyAction, RealtyActionTypes } from "../types/realty"
+import { CommentsAction } from '../types/comments';
 
 export const getHouses = () => {
 	return async (dispatch: Dispatch<RealtyAction>) => {
@@ -56,7 +58,10 @@ export const getDetails = (id: number) => {
 }
 
 export const addRealtyToFavoriteList = (realty: IDetails) => {
-	let favorite = JSON.parse(localStorage.getItem('favorite') || "")
+	// @ts-ignore
+	let favorite = JSON.parse(localStorage.getItem('favorite'))
+
+
 	if (!favorite) {
 		favorite = {
 			realties: []
@@ -65,7 +70,7 @@ export const addRealtyToFavoriteList = (realty: IDetails) => {
 	let newRealty = {
 		item: realty
 	}
-	let filteredFavorite = favorite.realties.filter((elem: any)  => elem.item.id === realty.id)
+	let filteredFavorite = favorite.realties.filter((elem: any) => elem.item.id === realty.id)
 	if (filteredFavorite.length > 0) {
 		favorite.realties = favorite.realties.filter((elem: any) => elem.item.id !== realty.id)
 	} else {
@@ -79,7 +84,8 @@ export const addRealtyToFavoriteList = (realty: IDetails) => {
 }
 
 export const getFavorite = () => {
-	let favorite = JSON.parse(localStorage.getItem('favorite') || "")
+	// @ts-ignore
+	let favorite = JSON.parse(localStorage.getItem('favorite'))
 	if (!favorite) {
 		favorite = {
 			realties: []
@@ -97,6 +103,35 @@ export const getSearchRealty = (value: string | null) => {
 		dispatch({
 			type: RealtyActionTypes.GET_SEARCH_REALTY,
 			payload: data
+		})
+	}
+}
+
+export const getComments = (id: number | string) => {
+	return async (dispatch: Dispatch<CommentsAction>) => {
+		const { data } = await axios(`http://localhost:8000/comments/?productId=${id}`)
+		dispatch({
+			type: CommentsActionTypes.GET_COMMENTS,
+			payload: data
+		})
+	}
+}
+export const addComment = (comment: IComment) => {
+	return async (dispatch: Dispatch<CommentsAction>) => {
+		await axios.post('http://localhost:8000/comments', comment)
+		dispatch({
+			type: CommentsActionTypes.ADD_COMMENT,
+			payload: comment
+		})
+	}
+}
+
+export const addRealty = (realty: IDetails) => {
+	return async (dispatch: Dispatch<RealtyAction>) => {
+		await axios.post('http://localhost:8000/houses', realty)
+		dispatch({
+			type: RealtyActionTypes.ADD_REALTY,
+			payload: realty
 		})
 	}
 }

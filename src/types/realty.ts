@@ -4,11 +4,12 @@ export interface RealtyState {
 	apartments: any[]
 	realtyCount: number
 	realtyLimit: number
-	realtyPage: number 
+	realtyPage: number
 	favoriteLength: number
 	details: IDetails
 	favorite: IFavorite
-	searchRealty: any[]
+	searchRealty: any[],
+	addedRealty: IDetails
 }
 
 export enum RealtyActionTypes {
@@ -19,7 +20,9 @@ export enum RealtyActionTypes {
 	CHANGE_FAVORITE_COUNT = 'CHANGE_FAVORITE_COUNT',
 	GET_DETAILS = 'GET_DETAILS',
 	GET_FAVORITE = 'GET_FAVORITE',
-	GET_SEARCH_REALTY = 'GET_SEARCH_REALTY'
+	GET_SEARCH_REALTY = 'GET_SEARCH_REALTY',
+	ADD_REALTY = 'ADD_REALTY'
+
 }
 
 interface GetHouses {
@@ -55,13 +58,16 @@ interface GetSearchRealty {
 	type: RealtyActionTypes.GET_SEARCH_REALTY
 	payload: any[]
 }
-
+interface AddRealty {
+	type: RealtyActionTypes.ADD_REALTY
+	payload: IDetails
+}
 
 
 export interface IDetails {
 	id?: number
 	type?: string
-	rooms?: number
+	rooms?: number | string
 	area?: number
 	landArea?: number
 	condition?: string
@@ -80,4 +86,12 @@ export interface IFavorite {
 	realties?: any[]
 }
 
-export type RealtyAction = GetHouses | GetApartments | GetRealty | GetAllRealty | ChangeFavoriteCount | GetDetails | GetFavorite | GetSearchRealty
+export type RealtyAction = GetHouses
+	| GetApartments
+	| GetRealty
+	| GetAllRealty
+	| ChangeFavoriteCount
+	| GetDetails
+	| GetFavorite
+	| GetSearchRealty
+	| AddRealty
